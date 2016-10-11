@@ -1,0 +1,22 @@
+--delete from apm_tablaVersion
+
+-- apm_tablaVersion - (tabla, lastVersion, usuario, fechaUltMdf , estado, version
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('AplicacionParametro', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Calle', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('CalleAltura', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('CalleInterseccion', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('EstadoTipoFormulario', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('MotivoAnulacionTipoFormulario', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('MotivoCierreTipoFormulario', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TipoFormulario', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('AplicacionBinarioVersion', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('ClaseLicencia', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('MarcaVehiculo', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Infraccion', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TipoDocumento', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Serie', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('LineaTUP', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TipoVehiculo', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TelefonoPanico', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Alcoholimetro', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Medico', 0, 'Tecso', DATETIME('NOW'), 1, 0)

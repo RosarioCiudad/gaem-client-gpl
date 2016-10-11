@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoutAnularForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"      
+        android:layout_marginBottom="5dp"  
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewAnularFormTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anular_form_result" />
+
+        <Spinner
+            android:id="@+id/spinnerMotivoAnulacionTipoFormulario"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:prompt="@string/anular_form_result_select_prompt" />
+
+        <LinearLayout
+            style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:onClick="DoSave"
+                android:text="@string/accept" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

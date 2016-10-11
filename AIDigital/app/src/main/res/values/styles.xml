@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="UiTextViewMultine" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/negro</item>
+    </style>
+    
+    <style name="UiTextViewNormal" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="UiEditTex" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:background">@drawable/edittextstyle</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+    <style name="UiDialogNuevaActa" parent="@android:style/Theme.Dialog"> 
+	</style>
+	
+    <style name="UiTextViewLabelDomicilio" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">12sp</item>
+    </style>    
+    
+        <style name="UiSpinner_NoUsadoMas" parent="@android:style/Widget.DropDownItem.Spinner">
+            <item name="android:background">@color/negro</item>
+            <item name="android:textSize">22sp</item>
+     </style>    
+     
+
+</resources>

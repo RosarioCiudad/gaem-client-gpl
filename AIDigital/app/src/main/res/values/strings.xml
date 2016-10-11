@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AIDigital</string>
+    <string name="app_header_title">Acta Digital  %1$s - Usuario: %2$s</string>
+    <string name="app_header_register_title">Acta Número: %1$s - Inspector: %2$s - Repartición: %3$s</string>
+
+    <!-- Base Messages -->
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="modify">Modificar</string>
+    <string name="save">Guardar</string>
+    <string name="close">Cerrar</string>
+    <string name="anular">Anular</string>
+    <string name="edit">Editar</string>
+    <string name="add">Agregar</string>
+    <string name="remove">Quitar</string>
+    <string name="clean">Limpiar</string>
+    <string name="print">Imprimir</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="exit">Salir</string>
+    <string name="minimizar">Minimizar</string>
+
+    <!-- Application -->
+    <string name="initialize_msg">Iniciando aplicación. Por favor espere…</string>
+    <string name="app_vertical_position_msg">Disposición modificada a Vertical</string>
+    <string name="app_horizontal_position_msg">Disposición modificada a Horizontal</string>
+
+    <!-- Main Activity -->
+    <string name="change_orientation">Cambiar Disposición de Formulario</string>
+    <string name="close_application">Cerrar Aplicación</string>
+    <string name="register_form">Registrar Formulario</string>
+    <string name="check_pinter_msg">Imprimir texto de prueba</string>
+    <string name="send_alert_msg">Alerta de Pánico</string>
+    <string name="synchronizing_msg">Sincronizando Aplicación…</string>
+    <string name="synchronizing_item_msg">Sincronizando %1$s…</string>
+    <string name="initializing_item_msg">Iniciando %1$s…</string>
+    <string name="synchronized_item_label">Enviado</string>
+    <string name="unsynchronized_item_label">Pendiente de Envío</string>
+    <string name="list_empty">No existen actas disponibles</string>
+    <string name="search_form_title">Actas Digitales</string>
+    <string name="export_msg">Exportando. Por favor espere…</string>
+    <string name="searching_msg">Buscando. Por favor espere…</string>
+    <string name="please_wait_msg">Por favor, aguarde unos segundos…</string>
+    <string name="change_pin_msg">Gestión de PIN</string>
+    <string name="licencia_msg">Consultar Licencia</string>
+    <string name="register_error_title">Registrar Acta</string>
+    <string name="register_error_msg">Por favor, finalice las actas pendientes o cerradas provisorias para poder continuar</string>
+    
+
+    <!-- Register Activity Messages -->
+    <string name="loading_msg">Cargando. Por favor espere…</string>
+    <string name="saving_msg">Guardando. Por favor espere…</string>
+    <string name="confirm_title">Por favor confirme</string>
+    <string name="exit_confirm_msg">¿Está seguro que desea salir?</string>
+    <string name="delete_item_confirm_msg">¿Está seguro que desea eliminar el item \"%1$s\"?</string>
+    <string name="disable_section_msg">Al aceptar de deshabilitará la sección desmarcada</string>
+    <string name="exit_form_title">Existen datos sin guardar</string>
+    <string name="exit_form_warning">Si sale perderá los cambios que no haya guardado. ¿Está seguro que desea salir?</string>
+    <string name="field_required">El campo \"%1$s\" no puede ser vacio.</string>
+    <string name="field_invalid">El valor ingresado en \"%1$s\" es inválido.</string>
+    <string name="codigo_formulario">Código de Formulario: </string>
+    <string name="delete_tab_confirm_msg">¿Está seguro que desea eliminar la pestaña \"%1$s\"?</string>
+    <string name="disable_section_title">Advertencia!</string>
+
+    <!-- Register Form -->
+    <string name="form_title">Selección de Acta</string>
+    <string name="sad_section_solicitud_title">Datos de Acta</string>
+    <string name="sad_section_domicilio_title">Domicilio del Titular</string>
+    <string name="form_validate_error">Complete los campos requeridos</string>
+    
+    <!-- Save Form -->
+    <string name="printing_msg">Imprimiendo. Por favor espere…</string>
+
+    <!-- Print result -->
+    <string name="printing_success_msg">Impresión Satisfactoria</string>
+
+    <!-- Close -->
+    <string name="save_form_validate_error">Debe completar todos los campos requeridos</string>
+    <string name="save_form_title">Acta Aceptada</string>
+    <string name="save_form_result">Firma del Acta: </string>
+    <string name="save_form_result_select_prompt">Seleccione</string>
+    <string name="blocked_app_title">Bloqueo por Inactividad</string>
+    <string name="motivo_title">Motivo: </string>
+    <string name="motivo_select_prompt">Seleccione Motivo</string>
+
+    <!-- Anular -->
+    <string name="anular_form_title">Acta Anulada</string>
+    <string name="anular_form_result">Motivo de Anulación: </string>
+    <string name="anular_form_result_select_prompt">Seleccione</string>
+
+    <!-- PIN Dialog -->
+    <string name="set_pin_title">Seteo de Número PIN</string>
+    <string name="set_pin_id_label">Usuario:</string>
+    <string name="set_pin_id_hint">Ingrese PIN</string>
+    <string name="set_pin_password_label">Contraseña:</string>
+    <string name="set_pin_password_hint">Ingrese su contraseña</string>
+    <string name="set_pin_pin_label">Número PIN:</string>
+    <string name="set_pin_pin_hint">Ingrese número de PIN que desee</string>
+
+    <!-- Verify PIN -->
+    <string name="verify_pin_title">Verificar Identidad</string>
+    <string name="verify_pin_msg">Debe configurar su número de PIN para poder operar ¿Desea hacerlo ahora?</string>
+    
+    <!-- Zona Horaria -->
+    <string name="timeZone_error_title">Registrar Acta</string>
+    <string name="timeZone_error_msg">La Zona Horaria del equipo esta mal configurada</string>
+    
+
+    <!-- Login -->
+    <string name="login_user_or_pass_error">Usuario o Contraseña incorrecto</string>
+    <string name="login_user_permission_error">El Usuario no posee permisos para acceder a esta aplicación</string>
+
+    <!-- Licencia Dialog -->
+    <string name="licencia_title">Consulta de Licencia</string>
+    <string name="documento_label">Document:</string>
+    <string name="clase_label">Clase:</string>
+    <string name="sexo_label">Sexo:</string>
+    <string-array name="sexo_array">
+        <item>Seleccionar</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <!-- Printer -->
+    <string name="alert_confirm_msg">¿Está seguro que desea realizar el envío de una alerta de pánico?</string>
+
+</resources>

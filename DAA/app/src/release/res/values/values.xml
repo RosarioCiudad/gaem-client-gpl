@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_url">https://www.rosario.gov.ar/gait</string>
+    <string name="app_name">MR-Admin</string>
+    <string name="app_name_title">MR-Admin v%1$s</string>
+    <string name="app_header_title">MR-Admin v%1$s - Usuario: %2$s</string>
+</resources>

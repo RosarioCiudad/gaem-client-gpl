@@ -1,0 +1,1336 @@
+#
+# generated on 2016/05/24 12:01:57
+#
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.Area
+tableName=def_area
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.Aplicacion
+tableName=apm_aplicacion
+# --table-fields-start--
+# --field-start--
+fieldName=codigo
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=descripcion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=packageName
+# --field-end--
+# --field-start--
+fieldName=className
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionBinarioVersion
+tableName=apm_aplicacionBinarioVersion
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacion
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=aplicacionTipoBinario
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=fecha
+# --field-end--
+# --field-start--
+fieldName=ubicacion
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionParametro
+tableName=apm_aplicacionParametro
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacion
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=codigo
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=valor
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionPerfil
+tableName=apm_aplicacionPerfil
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacion
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=printingTemplate
+# --field-end--
+# --field-start--
+fieldName=apPerfilSeccionList
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionOrderColumnName=orden
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionPerfilSeccion
+tableName=apm_aplicacionPerfilSeccion
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacionPerfil
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=seccion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=orden
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=noDesplegar
+# --field-end--
+# --field-start--
+fieldName=opcional
+# --field-end--
+# --field-start--
+fieldName=aplPerfilSeccionCampoList
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionOrderColumnName=orden
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionTabla
+tableName=apm_aplicacionTabla
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=tablaVersion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=orden
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AplicacionTipoBinario
+tableName=apm_aplicacionTipoBinario
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.AplPerfilSeccionCampo
+tableName=apm_aplPerfilSeccionCampo
+# --table-fields-start--
+# --field-start--
+fieldName=aplicacionPerfilSeccion
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=campo
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=orden
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=cantidadFilaGrid
+# --field-end--
+# --field-start--
+fieldName=soloLectura
+# --field-end--
+# --field-start--
+fieldName=aplPerfilSeccionCampoValorList
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionOrderColumnName=orden
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.AplPerfilSeccionCampoValor
+tableName=apm_aplPerfilSeccionCampoValor
+# --table-fields-start--
+# --field-start--
+fieldName=aplPerfilSeccionCampo
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=campoValor
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=orden
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=aplPerfilSeccionCampoValorOpcionList
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionOrderColumnName=orden
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.AplPerfilSeccionCampoValorOpcion
+tableName=apm_aplPerfilSeccionCampoValorOpcion
+# --table-fields-start--
+# --field-start--
+fieldName=aplPerfilSeccionCampoValor
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=campoValorOpcion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=orden
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.Campo
+tableName=apm_campo
+# --table-fields-start--
+# --field-start--
+fieldName=etiqueta
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=obligatorio
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=tratamiento
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=valorDefault
+# --field-end--
+# --field-start--
+fieldName=soloLectura
+# --field-end--
+# --field-start--
+fieldName=tablaBusqueda
+# --field-end--
+# --field-start--
+fieldName=mascaraVisual
+# --field-end--
+# --field-start--
+fieldName=campoValorList
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.CampoValor
+tableName=apm_campoValor
+# --table-fields-start--
+# --field-start--
+fieldName=campo
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=etiqueta
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=obligatorio
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=tratamiento
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=valorDefault
+# --field-end--
+# --field-start--
+fieldName=tablaBusqueda
+# --field-end--
+# --field-start--
+fieldName=soloLectura
+# --field-end--
+# --field-start--
+fieldName=mascaraVisual
+# --field-end--
+# --field-start--
+fieldName=campoValorOpcionList
+foreignCollection=true
+foreignCollectionEager=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.CampoValorOpcion
+tableName=apm_campoValorOpcion
+# --table-fields-start--
+# --field-start--
+fieldName=campoValor
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=etiqueta
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=obligatorio
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=tratamiento
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=valorDefault
+# --field-end--
+# --field-start--
+fieldName=tablaBusqueda
+# --field-end--
+# --field-start--
+fieldName=soloLectura
+# --field-end--
+# --field-start--
+fieldName=mascaraVisual
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.DispositivoMovil
+tableName=apm_dispositivoMovil
+# --table-fields-start--
+# --field-start--
+fieldName=area
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=numeroSerie
+# --field-end--
+# --field-start--
+fieldName=numeroLinea
+# --field-end--
+# --field-start--
+fieldName=numeroIMEI
+# --field-end--
+# --field-start--
+fieldName=emailAddress
+# --field-end--
+# --field-start--
+fieldName=forzarActualizacion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.notificacion.EstadoNotificacion
+tableName=not_estadoNotificacion
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.notificacion.Notificacion
+tableName=not_notificacion
+# --table-fields-start--
+# --field-start--
+fieldName=tipoNotificacion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=estadoNotificacion
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=aplicacion
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=numeroAplicacion
+# --field-end--
+# --field-start--
+fieldName=fecha
+# --field-end--
+# --field-start--
+fieldName=descripcionReducida
+# --field-end--
+# --field-start--
+fieldName=descripcionAmpliada
+# --field-end--
+# --field-start--
+fieldName=fechaDesde
+# --field-end--
+# --field-start--
+fieldName=fechaHasta
+# --field-end--
+# --field-start--
+fieldName=fechaEnvio
+# --field-end--
+# --field-start--
+fieldName=fechaRecepcion
+# --field-end--
+# --field-start--
+fieldName=canalContingencia
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.PerfilAcceso
+tableName=apm_perfilAcceso
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.PerfilAccesoAplicacion
+tableName=apm_perfilAccesoAplicacion
+# --table-fields-start--
+# --field-start--
+fieldName=perfilAcceso
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=aplicacion
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.PerfilAccesoUsuario
+tableName=apm_perfilAccesoUsuario
+# --table-fields-start--
+# --field-start--
+fieldName=perfilAcceso
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=usuarioAPM
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.perfil.Seccion
+tableName=apm_seccion
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.base.TablaVersion
+tableName=apm_tablaVersion
+# --table-fields-start--
+# --field-start--
+fieldName=tabla
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=lastVersion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.notificacion.TipoNotificacion
+tableName=not_tipoNotificacion
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=ubicacionSonido
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=ubicacionIcono
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.UsuarioApm
+tableName=apm_usuarioApm
+# --table-fields-start--
+# --field-start--
+fieldName=nombre
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=username
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=usertoken
+# --field-end--
+# --field-start--
+fieldName=usercert
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.gps.HistorialUbicacion
+tableName=gps_historialUbicacion
+# --table-fields-start--
+# --field-start--
+fieldName=usuarioApm
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=dispositivoMovil
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=fechaPosicion
+# --field-end--
+# --field-start--
+fieldName=fechaUbicacion
+# --field-end--
+# --field-start--
+fieldName=latitud
+# --field-end--
+# --field-start--
+fieldName=longitud
+# --field-end--
+# --field-start--
+fieldName=precision
+# --field-end--
+# --field-start--
+fieldName=origen
+# --field-end--
+# --field-start--
+fieldName=velocidad
+# --field-end--
+# --field-start--
+fieldName=radio
+# --field-end--
+# --field-start--
+fieldName=altitud
+# --field-end--
+# --field-start--
+fieldName=nivelBateria
+# --field-end--
+# --field-start--
+fieldName=nivelSenial
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.UsuarioApmDM
+tableName=apm_usuarioapmdm
+# --table-fields-start--
+# --field-start--
+fieldName=usuarioApm
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=dispositivoMovil
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.UsuarioApmImpresora
+tableName=apm_usuarioapmimpresora
+# --table-fields-start--
+# --field-start--
+fieldName=usuarioApm
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=impresora
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.seguridad.Impresora
+tableName=apm_impresora
+# --table-fields-start--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=numeroSerie
+# --field-end--
+# --field-start--
+fieldName=numeroUUID
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=coop.tecso.daa.domain.aplicacion.AreaAplicacionPerfil
+tableName=def_areaAplicacionPerfil
+# --table-fields-start--
+# --field-start--
+fieldName=area
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=aplicacionPerfil
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=perfilAcceso
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=usuario
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=fechaUltMdf
+dataPersister=DATE_LONG
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=estado
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=version
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

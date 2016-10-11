@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group>
+        <item
+            android:id="@+id/sendAlert"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/send_alert_msg"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/checkPrinter"
+            android:icon="@drawable/ic_menu_print"
+            android:title="@string/check_pinter_msg"/>
+        <item
+            android:id="@+id/licencia"
+            android:icon="@drawable/ic_btn_search"
+            android:title="@string/licencia_msg"/>
+        <item
+            android:id="@+id/changePin"
+            android:icon="@drawable/ic_login_mode"
+            android:title="@string/change_pin_msg"/>
+        <item
+            android:id="@+id/changeOrientation"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:title="@string/change_orientation"/>
+        <item
+            android:id="@+id/closeApplication"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="@string/close_application"/>
+    </group>
+
+</menu>

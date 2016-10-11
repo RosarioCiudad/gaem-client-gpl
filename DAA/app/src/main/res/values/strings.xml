@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRODUCCION
+    <string name="server_url">https://www.rosario.gov.ar/gait</string>   -->
+
+    <!-- TESTING ROSARIO -->
+    <string name="server_url">https://ssl.rosario.gov.ar/gait-test</string>
+     
+    <!-- TESTING 
+    <string name="server_url"> http://172.16.17.243:8080/gait</string>  --> 
+    <!-- TESTING 
+    <string name="server_url">http://172.16.17.38:19070/gait</string>     --> 
+    
+    
+    <string name="app_name">MR-Admin</string>
+    <string name="app_name_title">MR-Admin v%1$s</string>
+    <string name="app_header_title">MR-Admin v%1$s - Usuario: %2$s</string>
+
+    <!-- Login Messages -->
+    <string name="login_title">Inicio de Sesión</string>
+    <string name="login_id_label">Usuario:</string>
+    <string name="login_id_hint">Ingrese su usuario</string>
+    <string name="login_id_error">Debe ingresar su identificador de usuario</string>
+    <string name="login_password_label">Contraseña:</string>
+    <string name="login_password_hint">Ingrese su contraseña</string>
+    <string name="login_password_error">Debe ingresar su contraseña</string>
+    <string name="login_login_button">Ingresar</string>
+    <string name="close_session">Cerrar</string>
+    <string name="settings">Configuración</string>
+    <string name="login_mode">login mode</string>
+    <string name="login_mode_local">Login Local</string>
+    <string name="login_mode_remote">Login Remoto</string>
+    <string name="loading_msg">Cargando. Por favor espere…</string>
+    <string name="set_password_title">Seteo de Contraseña</string>
+    <string name="set_password_confirm_label">Confirmación de Contraseña:</string>
+    <string name="set_password_confirm_hint">Confirme su contraseña</string>
+    <string name="notificaciones_tittle">Notificaciones</string>
+    <string name="apl_links_empty">Sin acceso a aplicaciones</string> 
+    <string name="fecha_actual">Fecha Actual:</string>
+    <string name="hora_actual">Hora Actual:</string>
+    <string name="mensaje_fecha">Para continuar, confirme si los siguientes datos son correctos:</string>
+    
+
+    <!-- Base Messages -->
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="modify">Modificar</string>
+    <string name="save">Guardar</string>
+    <string name="close">Cerrar</string>
+    <string name="edit">Editar</string>
+    <string name="add">Agregar</string>
+    <string name="remove">Quitar</string>
+    <string name="clean">Limpiar</string>
+    <string name="print">Imprimir</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="list_empty">No existen Notificaciones disponibles</string>
+    <string name="synchronizing_item_msg">Sincronizando %1$s…</string>
+
+    <!-- App blocked -->
+    <string name="blocked_app_title">Bloqueo por Inactividad</string>
+    <string name="blocked_app_id_label">Identificación:</string>
+    <string name="blocked_app_id_hint">Ingrese su ID</string>
+    <string name="blocked_app_password_label">Contraseña:</string>
+    <string name="blocked_app_password_hint">Ingrese su contraseña</string>
+
+    <!-- Login -->
+    <string name="login_user_or_pass_error">Usuario o Contraseña incorrecto</string>
+    <string name="login_user_permission_error">El Usuario no posee permisos para acceder a esta aplicación</string>
+    <string name="update_available">Actualización disponible</string>
+    <string name="update_application">Actualización de %1$s </string>
+    <string name="update_message">Click si desea instalar la nueva versión</string>
+    <string name="login_lost_session">Perdió sesión, intente loguearse nuevamente.</string>
+    <string name="login_init">Iniciando sesión.</string>
+
+    <!-- Errors -->
+    <string name="error_reading_template">Error al leer template %1$, verifique si se encuentra el archivo.</string>
+    <string name="error_generating_report">Error al leer generar reporte PDF, comuniquese con el administrador.</string>
+
+    <!-- GPS Provider -->
+    <string name="gps_provider_disabled">El proveedor GPS elegido se encuentra deshabilitado. ¿Desea habilitarlo?</string>
+
+    <!-- Dialog -->
+    <string name="confirm_title">Por favor confirme</string>
+    <string name="exit_confirm_msg">¿Está seguro que desea salir?</string>
+    <string name="settings_correo">Correo: %1$s </string>
+    <string name="email_account_msg">Cuenta de correo principal asociada al equipo</string>
+    <string name="settings_imei">IMEI: %1$s </string>
+    <string name="imei_number_msg">Número de IMEI correspondiente al equipo</string>
+    <string name="seteo_de_contrasenia_exitoso">Seteo de contraseña exitoso</string>
+    <string name="actualizando_datos">Actualizando datos</string>
+    <string name="please_wait">Por favor, aguarde unos segundos…</string>
+</resources>

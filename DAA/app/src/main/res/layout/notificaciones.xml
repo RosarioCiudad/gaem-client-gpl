@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/app_backgroundColor"
+	android:orientation="vertical" >
+	
+    <HorizontalScrollView 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:divider="@color/white"
+    	android:background="@color/apl_link_background_color">
+		<LinearLayout 
+		    android:id="@+id/listAplLink"
+	    	android:layout_width="wrap_content"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal"
+    		android:layout_marginTop="6dp"
+    		android:layout_marginBottom="6dp"
+    		android:padding="2dp" 
+    		android:background="@color/apl_link_background_color">
+		</LinearLayout>
+   </HorizontalScrollView>
+    
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/label_background_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/notificaciones_tittle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/label_text_color" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_background_color" />
+       
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@color/transparent_gray"
+		android:background="@color/app_backgroundColor">
+	</ListView>
+	
+    <TextView android:id="@android:id/empty"
+		android:layout_width="wrap_content"
+		android:layout_height="0dip"
+		android:layout_weight="1.0"
+		android:text="@string/list_empty"
+		/>
+	 
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

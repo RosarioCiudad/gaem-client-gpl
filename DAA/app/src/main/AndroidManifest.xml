@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="coop.tecso.daa"
+    android:versionCode="1"
+    android:versionName="1.0.20160920.RC" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="11" />
+
+    <!-- Allow vibrations -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- File System Access -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Connection Status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <!-- Accounts access -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- GPS Location Access -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <!-- IMEI Number Access -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- BLUETOOTH -->
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+
+    <application
+        tools:replace="icon"
+        android:name=".base.DAAApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop" >
+
+        <!-- Activities -->
+        <activity
+            android:name="coop.tecso.daa.activities.NotificacionesActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="coop.tecso.daa.activities.NotificacionDetailActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="coop.tecso.daa.activities.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="coop.tecso.daa.activities.SettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+        <!-- Receivers -->
+        <receiver
+            android:name=".receivers.DAAMessageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="coop.tecso.daa.custom.intent.action.LOSE_SESSION" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Services -->
+        <service
+            android:name=".services.SyncUbicacionService"
+            android:enabled="true" />
+        <service
+            android:name=".services.SaveUbicacionService"
+            android:enabled="true" />
+        <service
+            android:name=".common.DAAService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="coop.tecso.IDAAService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
