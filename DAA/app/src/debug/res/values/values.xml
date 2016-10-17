@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MR-Admin-DEBUG</string>
-    <string name="app_name_title">MR-Admin DEBUG</string>
-    <string name="app_header_title">MR-Admin DEBUG- Usuario: %2$s</string>
+    <string name="app_name">Muni-Admin-DEBUG</string>
+    <string name="app_name_title">Muni-Admin DEBUG</string>
+    <string name="app_header_title">Muni-Admin DEBUG- Usuario: %2$s</string>
 
-    <string name="server_url">https://ssl.rosario.gov.ar/gait-test</string>
+    <string name="server_url">http://172.16.17.245:8080/gait</string>
     <!-- TESTING
    <string name="server_url"> http://172.16.17.243:8080/gait</string>  -->
     <!-- TESTING
