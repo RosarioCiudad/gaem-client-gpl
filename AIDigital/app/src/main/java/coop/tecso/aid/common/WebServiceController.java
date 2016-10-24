@@ -105,47 +105,6 @@ public class WebServiceController  {
 		return INSTANCE;
 	}
 
-	/**
-	 * 
-	 * @param codigoApp
-	 * @return
-	 * @throws Exception
-	 */
-	public List<UsuarioApmReparticion> syncReparticion()throws Exception {
-		try {
-			// Invoke WS
-			String response = secureWebGetInvoke("reparticion/list.json", new HashMap<String, String>());
-
-			Type type = new TypeToken<List<UsuarioApmReparticion>>(){}.getType();
-			// Parse and return response
-			UsuarioApmReparticionDAO usuarioApmReparticionDAO = 
-					DAOFactory.getInstance().getUsuarioApmReparticionDAO();
-
-			List<UsuarioApmReparticion> list = gson.fromJson(response, type);
-			for (UsuarioApmReparticion rUsuarioApmReparticion : list) {
-				//
-				UsuarioApmReparticion usuarioApmReparticion =
-						usuarioApmReparticionDAO.findByTipoFormulario(rUsuarioApmReparticion.getTipoFormulario());
-
-				if(usuarioApmReparticion == null){
-					usuarioApmReparticionDAO.create(rUsuarioApmReparticion);
-					continue;
-				}
-				Integer numeroInspector = rUsuarioApmReparticion.getNumeroInspector();
-				if(!numeroInspector.equals(usuarioApmReparticion.getNumeroInspector())){
-					usuarioApmReparticion.setNumeroInspector(numeroInspector);
-					usuarioApmReparticionDAO.update(usuarioApmReparticion);
-				}
-			}
-			return list;
-		}catch (ReplyException e) {
-			throw e;
-		}catch (Exception e) {
-			Log.e(LOG_TAG, "**ERROR**", e);
-			throw new ReplyException(HttpStatus.SC_METHOD_FAILURE , "Error Inesperado");
-		}
-	}
-
 	
 	/**
 	 * 

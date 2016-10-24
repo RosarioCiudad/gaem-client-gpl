@@ -638,9 +638,6 @@ public class MainActivity extends ListActivity {
 						// Talonario
 						publishProgress(context.getString(R.string.synchronizing_item_msg, "talonario"));
 						synchronize(Serie.class);
-						// Reparticion
-						publishProgress(context.getString(R.string.synchronizing_item_msg, "repartición"));
-						webService.syncReparticion();
 					} catch (Exception e) {
 						// Si falla la sincronizacion al WS se continua en modo desconectado
 						Log.d(LOG_TAG, "BuildSearchPageTask: ***NO SYNC***", e);
