@@ -21,7 +21,7 @@
 
     <string name="app_name">AIDigital</string>
     <string name="app_header_title">Acta Digital  %1$s - Usuario: %2$s</string>
-    <string name="app_header_register_title">Acta Número: %1$s - Inspector: %2$s - Repartición: %3$s</string>
+    <string name="app_header_register_title">Acta: %1$s - Inspector: %2$s</string>
 
     <!-- Base Messages -->
     <string name="accept">Aceptar</string>

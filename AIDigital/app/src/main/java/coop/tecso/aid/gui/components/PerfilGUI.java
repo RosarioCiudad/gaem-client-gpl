@@ -169,10 +169,6 @@ public class PerfilGUI extends Component {
 		builder.append("                   ");
 		builder.append("<b>Hora: </b>"+ new SimpleDateFormat("HH:mm").format(formulario.getFechaInicio()));
 		builder.append("<br>");
-		builder.append(String.format("<b>Inspector: </b> %s",formulario.getNumeroInspector()));
-		builder.append("                 ");
-		builder.append(String.format("<b>Repartición: </b> %s",formulario.getReparticion()));
-		builder.append("<br>");
 		for(Component component: this.components){
 			builder.append(component.getPrinterValor());
 		}

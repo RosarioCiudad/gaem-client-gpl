@@ -347,6 +347,10 @@ public class WebServiceController  {
 		for (AplicacionBinarioVersion entity: entityDelta) {      
 			// Aplicacion
 			Aplicacion aplicacion = aplicacionDAO.findById(entity.getAplicacion().getId());
+
+			if(aplicacion == null) {
+				continue;
+			}
 			if(!aplicacionDAO.hasAccess(usuarioID, aplicacion.getCodigo())){
 				continue;
 			}

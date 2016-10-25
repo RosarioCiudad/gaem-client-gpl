@@ -181,16 +181,6 @@ public class AIDigitalManager {
 			e.printStackTrace();
 		}
 
-		// Reparticion
-		UsuarioApmReparticion usuarioApmReparticion = 
-				DAOFactory.getInstance().getUsuarioApmReparticionDAO().findByTipoFormulario(tipoFormulario);
-		if(usuarioApmReparticion == null){
-			throw new ReplyException(500, "No se pudo obtener repartición asociada al usuario");
-		}
-
-		formulario.setReparticion(usuarioApmReparticion.getReparticion().getId());
-		formulario.setNumeroInspector(usuarioApmReparticion.getNumeroInspector());
-
 		// Seteo: Numero y Serie
 		if(false == generateNumero(formulario)){
 			throw new ReplyException(500, "No se pudo generar número de acta");

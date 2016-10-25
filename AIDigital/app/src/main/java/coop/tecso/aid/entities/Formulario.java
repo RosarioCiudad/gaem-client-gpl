@@ -98,12 +98,6 @@ public class Formulario extends AbstractEntity {
 	@DatabaseField
 	private Integer origen;
 	
-	@DatabaseField
-	private Integer numeroInspector;
-	
-	@DatabaseField
-	private Integer reparticion;
-	
 	@DatabaseField(dataType = DataType.BYTE_ARRAY)
 	private byte[] firmaDigital;
 	
@@ -291,22 +285,6 @@ public class Formulario extends AbstractEntity {
 
 	public void setFormularioDigital(byte[] formularioDigital) {
 		this.formularioDigital = formularioDigital;
-	}
-
-	public Integer getNumeroInspector() {
-		return numeroInspector;
-	}
-
-	public void setNumeroInspector(Integer numeroInspector) {
-		this.numeroInspector = numeroInspector;
-	}
-
-	public Integer getReparticion() {
-		return reparticion;
-	}
-
-	public void setReparticion(Integer reparticion) {
-		this.reparticion = reparticion;
 	}
 
 	public Talonario getTalonario() {

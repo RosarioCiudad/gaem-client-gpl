@@ -619,9 +619,7 @@ public class MainActivity extends ListActivity {
 						synchronize(MarcaVehiculo.class);
 						synchronize(ClaseLicencia.class);
 						synchronize(EstadoTipoFormulario.class);
-						synchronize(LineaTUP.class);
-						synchronize(Alcoholimetro.class);
-						synchronize(Medico.class);
+
 						// Parametros
 						publishProgress(context.getString(R.string.synchronizing_item_msg, "parámetros"));
 						synchronize(AplicacionParametro.class);

@@ -82,12 +82,6 @@ fieldName=fechaMedicion
 fieldName=origen
 # --field-end--
 # --field-start--
-fieldName=numeroInspector
-# --field-end--
-# --field-start--
-fieldName=reparticion
-# --field-end--
-# --field-start--
 fieldName=firmaDigital
 dataPersister=BYTE_ARRAY
 # --field-end--

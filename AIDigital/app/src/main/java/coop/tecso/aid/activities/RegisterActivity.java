@@ -467,9 +467,8 @@ public class RegisterActivity extends Activity {
 			//--
 			// Nro Acta
 			String numero = formulario.getNumero();
-			Integer inspector = formulario.getNumeroInspector();
-			Integer reparticion = formulario.getReparticion();
-			context.setTitle(getString(R.string.app_header_register_title, numero, inspector, reparticion));
+			String inspector = 	appState.getCurrentUser().getNombre();
+			context.setTitle(getString(R.string.app_header_register_title, numero, inspector));
 			//--
 		}
 	}

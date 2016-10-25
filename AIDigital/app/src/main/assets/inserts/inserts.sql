@@ -18,5 +18,5 @@ INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado,
 INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('LineaTUP', 0, 'Tecso', DATETIME('NOW'), 1, 0)
 INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TipoVehiculo', 0, 'Tecso', DATETIME('NOW'), 1, 0)
 INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('TelefonoPanico', 0, 'Tecso', DATETIME('NOW'), 1, 0)
-INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Alcoholimetro', 0, 'Tecso', DATETIME('NOW'), 1, 0)
-INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Medico', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+--INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Alcoholimetro', 0, 'Tecso', DATETIME('NOW'), 1, 0)
+--INSERT INTO apm_tablaVersion (tabla, lastVersion, usuario, fechaUltMdf , estado, version) Values ('Medico', 0, 'Tecso', DATETIME('NOW'), 1, 0)
