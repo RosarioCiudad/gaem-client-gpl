@@ -22,10 +22,10 @@ recibe dichas peticiones y sirve como proxy/interface con los sistemas existente
 ### Android Studio
 
 - Instalar y configurar Android Studio (Guía en su web)
-- Imoprtar proyecto: File -> Open -> gaem-client-gpl -> <APLICACION> (AIDigital, DAA) *
+- Imoprtar proyecto: File -> Open -> gaem-client-gpl -> <APLICACION> (AIDigital, DAA)
 - Ejecutar: Gradle Proyects -> AIDigital -> install -> installDebug
 
-* DAA-Domain es un proyecto de librería con código común para los otros dos proyectos
+DAA-Domain es un proyecto de librería con código común para los otros dos proyectos
 
 
 ## Instalación GAEM-Server
